@@ -16,18 +16,20 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     width: "100%",
     fontSize: 16,
-    paddingVertical: 14,
+    paddingVertical: 12,
     paddingHorizontal: 16,
     fontWeight: '400'
  },
  boxInputIcon:{
    flexDirection: 'row',
    width: "100%",
-   paddingVertical: 14,
+   paddingVertical: 12,
    paddingHorizontal: 16,
    backgroundColor: COLORS.subBg,
    borderRadius: 100,
-   justifyContent: 'space-between'
+   justifyContent: 'space-between',
+   alignContent: 'center',
+   alignItems: 'center'
  },
  inputIcon:{
    fontSize: 16,

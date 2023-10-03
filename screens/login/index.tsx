@@ -12,6 +12,7 @@ import styles from "./style";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { useNavigation } from "@react-navigation/native";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [account, setAccount] = useState("");
@@ -20,11 +21,17 @@ const LoginScreen = () => {
   const handleLogin = () => {
     navigation.navigate("Home");
   };
+  const changeSignUp = () => {
+    navigation.push("SignUp");
+    
+  };
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       
         <View 
         style={styles.container}>
+          <KeyboardAwareScrollView  contentContainerStyle={{ paddingBottom: 40 }}>
+
           <View style={styles.header}>
             <Image
               source={require("../../assets/images/login.png")}
@@ -51,12 +58,13 @@ const LoginScreen = () => {
               </View>
             </View>
           </View>
+          </KeyboardAwareScrollView>
           <View style={styles.footer}>
             <Text>Bạn chưa có tài khoản? </Text>
             <Button
               isButtonText={true}
               text={"Đăng ký"}
-              onPress={handleLogin}
+              onPress={changeSignUp}
             />
           </View>
         </View>

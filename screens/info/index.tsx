@@ -19,7 +19,7 @@ import Button from "../../components/Button";
 import * as ImagePicker from "expo-image-picker";
 import NotificationComponent from "../../Notification";
 
-const InfoScreen = () => {
+const SignUpScreen = () => {
   const [fullName, setFullName] = useState("Văn Phạm Trung Tuyến");
   const [account, setAccount] = useState("vpttuyen@gmail.com");
   const [passWord, setPassWord] = useState("tuyenmro");
@@ -74,11 +74,11 @@ const InfoScreen = () => {
   };
 
   return (
-    <KeyboardAwareScrollView
+   <KeyboardAwareScrollView
       style={styles.container}
       keyboardOpeningTime={0}
       stickyHeaderIndices={[0]}
-    >
+    > 
       <AppBarNav titleHeader="Tài khoản" />
       <ImageBackground
         source={require("../../assets/images/bg.jpg")}
@@ -147,7 +147,4 @@ const InfoScreen = () => {
   );
 };
 
-export default InfoScreen;
-function schedulePushNotification() {
-  throw new Error("Function not implemented.");
-}
+export default SignUpScreen;

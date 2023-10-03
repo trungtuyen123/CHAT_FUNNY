@@ -14,7 +14,7 @@ const HeaderHome = ({ fullName, avatar, onPress }) => {
   console.log("onPress", onPress);
   return (
     <BlurView intensity={80} tint="light">
-      <SafeAreaView/>
+      <SafeAreaView style={{flex:1, paddingTop: 30}}/>
       <StatusBar
         barStyle="dark-content"
         backgroundColor="white"

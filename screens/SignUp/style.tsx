@@ -6,9 +6,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.white,
     paddingTop: 40,
-    justifyContent: 'space-between'
+   
  },
-
+ keyboard:{ },
  imageLogin: {
     width: 250,
     height: 250
@@ -30,10 +30,8 @@ const styles = StyleSheet.create({
  footer:{
    flexDirection: 'row',
    flex: 1,
-   bottom: 0,
    justifyContent: 'center',
-   alignItems: 'center'
-
+   alignItems: 'center',
  }
 })
 

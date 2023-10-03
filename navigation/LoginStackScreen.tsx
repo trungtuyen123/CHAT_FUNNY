@@ -1,6 +1,7 @@
 import * as React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "../screens/login";
+import SignUpScreen from "../screens/SignUp";
 
 const Stack = createStackNavigator();
 const LoginStackScreen = ({ }) => {
@@ -16,7 +17,10 @@ const LoginStackScreen = ({ }) => {
         name="Login"
         component={LoginScreen}
       />
-  
+    <Stack.Screen
+        name="SignUp"
+        component={SignUpScreen}
+      />
     </Stack.Navigator>
   );
 };
